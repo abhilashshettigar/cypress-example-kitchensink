@@ -80,7 +80,7 @@ pipeline {
       }
 
       // https://jenkins.io/doc/book/pipeline/syntax/#parallel
-      parallel {
+      //parallel {
         // start several test jobs in parallel, and they all
         // will use Cypress Dashboard to load balance any found spec files
         stage('tester A') {
@@ -97,7 +97,7 @@ pipeline {
             sh "npm run e2e:record:parallel"
           }
         }
-      }
+      //}
 
     }
   }
